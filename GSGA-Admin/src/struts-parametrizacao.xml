@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN" "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="parametrizacao" namespace="/parametrizacao" extends="default-gsgaadmin">
+		<action name="parametrizacao" method="iniciarParametrizacao" class="parametrizacaoAction">
+			<result>/WEB-INF/pages/parametrizacao/consultaParametrizacao.jsp</result>
+		</action>
+		<action name="iniciarCadastro" method="iniciarCadastro" class="parametrizacaoAction">
+			<result>/WEB-INF/pages/parametrizacao/cadastroParametrizacao.jsp</result>
+		</action>
+		
+		<action name="adicionarCabecalho" method="adicionarCabecalho" class="parametrizacaoAction">
+			<result>/WEB-INF/pages/parametrizacao/cadastroParametrizacao.jsp</result>
+		</action>
+		
+		<action name="adicionarColuna" method="adicionarColuna" class="parametrizacaoAction">
+			<result>/WEB-INF/pages/parametrizacao/cadastroParametrizacao.jsp</result>
+		</action>
+		<action name="salvar" method="salvar" class="parametrizacaoAction">
+			<result type="redirect">/parametrizacao/parametrizacao.do</result>
+		</action>
+		<action name="editar" method="editar" class="parametrizacaoAction">
+			<result>/WEB-INF/pages/parametrizacao/cadastroParametrizacao.jsp</result>
+		</action>
+		<action name="removerCabecalho" method="removerCabecalho" class="parametrizacaoAction">
+			<result>/WEB-INF/pages/parametrizacao/cadastroParametrizacao.jsp</result>
+		</action>
+		<action name="removerColuna" method="removerColuna" class="parametrizacaoAction">
+			<result>/WEB-INF/pages/parametrizacao/cadastroParametrizacao.jsp</result>
+		</action>
+	</package>
+</struts>

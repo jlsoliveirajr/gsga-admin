@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN" "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="login" namespace="/login" extends="default-gsgaadmin">
+	
+		<action name="login" method="iniciarRotina" class="loginAction">
+			<result>/WEB-INF/pages/login/login.jsp</result>
+		</action>
+		<action name="autenticar" method="autenticar" class="loginAction">
+			<result name="success" type="redirect">inicio.do</result>
+			<result name="input">/WEB-INF/pages/login/login.jsp</result>
+		</action>
+	</package>
+</struts>
